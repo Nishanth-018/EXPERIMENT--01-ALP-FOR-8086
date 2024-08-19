@@ -79,12 +79,12 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 # Addition  of 8 bit ALP
 ~~~
-## org 100h
-## mov ax,0a123h;
-## mov bx,0b456h;
-## add ax,bx;
-## mov [1234h],ax;
-## ret
+org 100h
+mov ax,0a123h;
+mov bx,0b456h;
+add ax,bx;
+mov [1234h],ax;
+ret
 ~~~
 
 
@@ -95,11 +95,11 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 # Subtraction   of 8 bit numbers  ALP
 ~~~
 ## org 100h
-## mov ax,0d101h;
-## mov bx,0c789h;
-## sub ax,bx;
-## mov [5678h],ax;
-## ret
+mov ax,0d101h;
+mov bx,0c789h;
+sub ax,bx;
+mov [5678h],ax;
+ret
 ~~~
  
 ## Output  
@@ -107,12 +107,12 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 # Multiplication ALP
 ~~~
-## org 100h
-## mov ax,0e112h;
-## mov bx,0f131h;
-## mul bx;
-## mov [9101h],ax;
-## ret
+org 100h
+mov ax,0e112h;
+mov bx,0f131h;
+mul bx;
+mov [9101h],ax;
+ret
 ~~~
  ## Output
  ![image](https://github.com/user-attachments/assets/e70b872a-7834-4b5f-a8fb-09144cbce8aa)
@@ -121,60 +121,60 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 # Division ALP
 ~~~
-## org 100h
-## mov ax,0b161h;
-## mov bx,0a415h;
-## div bx;
-## mov [1121h],ax;
-## ret
+org 100h
+mov ax,0b161h;
+mov bx,0a415h;
+div bx;
+mov [1121h],ax;
+ret
 ~~~
 ## Output
 ![image](https://github.com/user-attachments/assets/7a44a3c3-12f8-4135-a341-264f224f3784)
 
 # OR Operation
 ```py
-## org 100H  
-## MOV SI,0532H;
-## MOV AX,0A32H;
-## MOV BX,0B13H;
-## OR AX,BX;
-## ret
+org 100H  
+MOV SI,0532H;
+MOV AX,0A32H;
+MOV BX,0B13H;
+OR AX,BX;
+ret
 ```
 ![image](https://github.com/user-attachments/assets/7c2f8664-230f-4f50-a438-7d646fbfccb7)
 
 
 # AND Operation
 ```py
-## org 100H  
-## MOV [SI],AX;
-## MOV AX,0A32H;
-## MOV BX,0B13H;
-## AND AX,BX; 
-## ret
+org 100H  
+MOV [SI],AX;
+MOV AX,0A32H;
+MOV BX,0B13H;
+AND AX,BX; 
+ret
 ```
 ![image](https://github.com/user-attachments/assets/41323056-f9d3-43cd-94c5-b3685a2d92a1)
 
 
 # XOR Operation
 ```py
-## org 100H  
-## MOV [SI+2],AX;
-## MOV AX,0A32H;
-## MOV BX,0B13H; 
-## XOR AX,BX;  
-## ret 
+org 100H  
+MOV [SI+2],AX;
+MOV AX,0A32H;
+MOV BX,0B13H; 
+XOR AX,BX;  
+ret 
 ```
 ![image](https://github.com/user-attachments/assets/34919609-a019-4cd3-9dc2-dd2a6cef5ae0)
 
 
 # NOT Operation
 ```py
-## org 100H  
-## MOV [SI+4],AX;
-## MOV AX,0A32H;
-## NOT AX; 
-## MOV [SI+6],AX;
-## ret 
+org 100H  
+MOV [SI+4],AX;
+MOV AX,0A32H;
+NOT AX; 
+MOV [SI+6],AX;
+ret 
 ```
 ![image](https://github.com/user-attachments/assets/bcc8175d-c400-4748-996e-4b991cfa8739)
 
